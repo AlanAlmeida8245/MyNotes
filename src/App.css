@@ -1,0 +1,213 @@
+
+
+button{
+  background-color: rgb(77, 184, 255);
+  padding: 1em;
+  width: 93%;
+  border-radius: 5px;
+  border: none;
+}
+.btn-add{
+  width: 10em;
+  height: 2.5em;
+  padding: 0;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgb(56, 166, 240);
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: rgb(77, 184, 255);
+}
+
+textarea{
+  resize: none;
+  height: 20em;
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(253, 230, 253);
+  border-radius: 5px;
+  border: none;
+  color: black;
+  font-size: 18px;
+  padding: 0.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.inputTexto{
+  width: 90%;
+  height: 2em;
+  padding: 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(253, 230, 253);
+  border-radius: 5px;
+  border: none;
+  color: black;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.inputTexto:focus{
+  outline:rgb(86, 221, 255) ;
+}
+
+.container-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 900px) {
+    .container-grid{
+      grid-template-columns: 1fr;
+    }
+}
+
+.DataSide{
+  padding: 10px;
+  max-width: 30em;
+  margin: 1em;
+}
+
+.NotesSide{
+  text-align: right;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  
+}
+@media (max-width: 900px) {
+  .NotesSide{
+    grid-template-columns: 1fr;
+  }
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+@media (max-width: 515px) {
+    .header{
+      display: block;
+      margin-bottom: 1em;
+    }
+}
+
+a{
+  width: 40px;
+  height: 40px;
+}
+.card{
+  background-color: rgb(194, 31, 139);
+  border-radius: 5px;
+  padding: 1em;
+  text-align: start;
+  box-shadow: 20px;
+  height: 20em;
+  width: 20em;
+  overflow: hidden;
+  transition: all 0.3s; /* Adicione a propriedade de duração (por exemplo, 0.3s) */
+}
+@media (max-width: 900px) {
+    .card{
+      max-height: 15em;
+      width: 90%;
+    }
+}
+.card > h1{
+  color: rgb(241, 241, 241);
+
+}
+.note-info{
+   z-index: 1;
+   white-space: break-spaces;
+   text-overflow: ellipsis;
+}
+.note-icon{
+ 
+  opacity: 25%;
+  transform: rotate(-10deg);
+  margin: 5px;
+  z-index: 0;
+  
+}
+
+.btn-remove{
+ 
+  width: 10%;
+}
+
+.icons > img{
+  width: 40px;
+
+}
+.icons{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.labelEdit{
+  color: rgb(219, 36, 158);
+}
+
+.btn-closeEdit, .btn-saveEdit{
+  background-color: rgb(219, 36, 158);
+  width: 80px;
+  height: 40px;
+}
+.btn-saveEdit{
+  width: 96%;
+}
+
+.btn-closeEdit:hover, .btn-saveEdit:hover{
+  background-color: rgb(194, 31, 139);
+}
+
+.txt{
+  color: rgb(194, 31, 139);;
+}
+
+.btn-addPaste{
+  background-color: orange;
+  width: 140px;
+  height: 40px;
+}
+.btn-addPaste:hover{
+  background-color: rgb(221, 152, 24);
+}
+
+.card:hover {
+  transition: all 0.3s; /* Adicione a propriedade de duração (por exemplo, 0.3s) */
+  transform: scale(1.1); /* Corrija a propriedade para transform */
+}
+
+
+.olho{
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  width: 40px;
+}
+
+.btn-back{
+  width: 160px;
+  height: 40px;
+}
+
+.note-page  h1{
+  color: rgb(224, 67, 133);
+}
+.note-page{
+  width: 300px;
+  padding: 2em;
+}
