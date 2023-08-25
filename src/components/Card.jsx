@@ -1,6 +1,6 @@
 import Note from "../../src/assets/Icons/note.png";
 import Delete from "../../src/assets/Icons/delete.png"
-import Edit from "../assets/Icons/Edit.png"
+import Edit from "../assets/Icons/edit.png"
 import "../App.css";
 import { Link } from "react-router-dom";
 import Olho from "../assets/Icons/211661_eye_icon.png"
