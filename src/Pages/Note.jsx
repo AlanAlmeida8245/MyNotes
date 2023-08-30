@@ -10,7 +10,7 @@ export default function Note() {
 
   const getNote = async () => {
     try {
-      const response = await axios.get(`http://localhost:2000/nota/${id}`);
+      const response = await axios.get(`https://back-end-alanalmeida8245.vercel.app/nota/${id}`);
       setNote(response.data);
     } catch (error) {
       console.log(error);

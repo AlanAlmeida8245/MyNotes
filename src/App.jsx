@@ -19,7 +19,7 @@ function App() {
   const createNote = async () => {
     if (titulo === "" || texto == "") return alert("preencha todos os campos");
 
-    const response = await axios.post("http://localhost:2000/criar", {
+    const response = await axios.post("https://back-end-alanalmeida8245.vercel.app/criar", {
       titulo: titulo,
       texto: texto,
     });
@@ -36,7 +36,7 @@ function App() {
       return alert("preencha todos os campos");
 
     try {
-      const response = await axios.patch("http://localhost:2000/editar", {
+      const response = await axios.patch("https://back-end-alanalmeida8245.vercel.app/editar", {
         id: id,
         novotitulo: edittitulo,
         novotexto: edittexto,
@@ -52,7 +52,7 @@ function App() {
 
   const getNotes = async () => {
     try {
-      const response = await axios.get("http://localhost:2000/notas");
+      const response = await axios.get("https://back-end-alanalmeida8245.vercel.app/notas");
       setNotes(response.data);
       console.log(response.data);
     } catch (error) {
@@ -79,7 +79,7 @@ function App() {
 
   const handleRemoveCard = async (cardId) => {
     try {
-      const response = await axios.delete("http://localhost:2000/deletar", {
+      const response = await axios.delete("https://back-end-alanalmeida8245.vercel.app/deletar", {
         data: {
           id: cardId,
         },
