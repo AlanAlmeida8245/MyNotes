@@ -192,11 +192,16 @@ a{
 }
 
 
-.olho{
-  background-color: white;
-  border-radius: 10px;
-  padding: 5px;
+.iconsa{
   width: 40px;
+  height: 40px;
+  color: purple;
+}
+.iconsa:hover{
+  transform: rotate(-7deg);
+  transition-property: all;
+  transition-delay: 1ms;
+  color: rgb(255, 255, 255);
 }
 
 .btn-back{
@@ -210,4 +215,11 @@ a{
 .note-page{
   width: 300px;
   padding: 2em;
+}
+
+.topo
+{
+  width: 100%;
+  text-align: center;
+  
 }

@@ -93,8 +93,10 @@ function App() {
 
   return (
     <>
-      <h1>MyNotes</h1>
-      <p>Crie Notas, compartilhe pensamentos</p>
+      <div className="topo">
+        <h1>MyNotes</h1>
+        <p>Crie Notas, compartilhe pensamentos</p>
+      </div>
 
       <section className="container-grid">
         <div className="DataSide">
